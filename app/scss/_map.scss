@@ -1,0 +1,174 @@
+.map{
+  width: 192rem;
+
+  &__inner{
+    width: 160rem;
+    margin: 10rem auto;
+    margin-top: 23rem;
+    margin-bottom: 20rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @include respond(phone){
+      width: 60rem;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: block;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: block;
+    }
+  }
+
+  &__img{
+    display: block;
+    width: 71rem;
+    height: 49.3rem;
+
+    @include respond(phone){
+      display: block;
+      margin-bottom: 5rem;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: block;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: block;
+    }
+  }
+
+  &__box{
+    display: block;
+    width: 25rem;
+    text-align: left;
+
+    @include respond(phone){
+      width: 60rem;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: block;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: block;
+    }
+  }
+
+  &__contact{
+    display: block;
+    margin-bottom: 6rem;
+    position: relative;
+
+    &::before{
+      content: "";
+      display: block;
+      width: 32px;
+      height: 36px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(../img/icon1.png);
+      position: absolute;
+      top: 0;
+      left: -5rem;
+    }
+  }
+
+  &__tel{
+    display: block;
+    margin-bottom: 6rem;
+    position: relative;
+
+    &::before{
+      content: "";
+      display: block;
+      width: 27px;
+      height: 30px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(../img/icon2.png);
+      position: absolute;
+      top: 1.5rem;
+      left: -5rem;
+    }
+
+    span{
+      display: block;
+    }
+  }
+
+  &__mail{
+    display: block;
+    margin-bottom: 6rem;
+    position: relative;
+
+    &::before{
+      content: "";
+      display: block;
+      width: 29px;
+      height: 29px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(../img/icon3.png);
+      position: absolute;
+      top: 0;
+      left: -5rem;
+    }
+  }
+
+  &__messenger{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+
+    &_1{
+      margin-right: 6.2rem;
+
+      &::before{
+        content: "";
+        display: block;
+        width: 29px;
+        height: 29px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../img/icon4.png);
+        position: absolute;
+        top: -.7rem;
+        left: -5rem;
+      }
+    }
+
+    &_2::before{
+      content: "";
+      display: block;
+      width: 27px;
+      height: 24px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(../img/icon5.png);
+      position: absolute;
+      top: -.3rem;
+      left: 9rem;
+    }
+
+    span{
+      display: block;
+    }
+  }
+}
